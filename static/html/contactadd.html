@@ -1,0 +1,49 @@
+{{ define "content" }}
+<div class="container">
+  <h2>Add a Contact to Go Scouting</h2>
+  <form action="" method="">
+    <!-- class="form-group" provides vertical bottom padding -->
+    <div class="form-group">
+
+      <label for="contactID">Contact ID</label>
+      <input type="text" name="contactID" value="" id="contactID" class="form-control">
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+          <label for="firstname">First Name</label>
+          <input type="text" name="firstname" value="" id="firstname" class="form-control">
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label for="lastname">Last Name</label>
+          <input type="text" name="lastname" value="" id="lastname" class="form-control">
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="gender">Gender</label>
+      <select class="form-control" name="gender" id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+        <option value="decline">I prefer not to say</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+        <input type="checkbox" id="accept" class="form-check-input">
+        <label for="accept" class="form-check-label">I accept the terms of conduct &amp; conditions.</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-outline-primary">
+        Submit!
+      </button>
+    </div>
+  </form>
+</div>
+
+{{ end }}
